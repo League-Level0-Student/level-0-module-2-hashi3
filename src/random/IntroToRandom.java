@@ -10,6 +10,11 @@ public class IntroToRandom {
 		
 		int r = 0;
 		
+	Random randy = new Random();
+	// 
+	r = randy.nextInt(311) - 222 ;
+		
+    System.out.println(r);		
 		//3. Now make r random. 
 		//   Create an object of the Random class
 		//	 use .nextInt() to get a random number

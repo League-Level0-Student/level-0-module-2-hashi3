@@ -6,6 +6,7 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -83,7 +84,9 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         int opponentSelection = 0;
         
         //3. Run the program again. Is the result different?
- 
+  
+       Random Randy = new Random();
+       opponentSelection = Randy.nextInt(3);
         int selection = 0;
        
         if(e.getSource() == paperButton){
