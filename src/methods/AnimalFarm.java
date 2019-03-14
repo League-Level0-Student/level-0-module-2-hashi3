@@ -17,9 +17,33 @@ public class AnimalFarm {
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
 		
+	while (true ) { 
+		 String Animal = JOptionPane.showInputDialog("which animal do you want?");
+
+		 
+		if( Animal.contentEquals(llamaFile))
+		{
+		this.playllama();	
+		}
+		else if (Animal.contentEquals(quackFile))
+		{
+			this.playQuack();
+		}
+		else if(Animal.contentEquals(mooFile))
+		{
+			this.playMoo();
+		}
+		else {
+			break;
+		}
+	} 
+	
 		/* 2. Make it so that the user can keep entering new animals. */
 	}
-
+    void playllama() {
+    	playNoise(llamaFile);
+    }
+	
 	void playMoo() {
 		playNoise(mooFile);
 	}
